@@ -6,14 +6,6 @@ class GokopsAT112 < Formula
   sha256 "de878218c43aa3c3bad54c1c52d95e3b0e5d336e1285c647383e775541a28b25"
   license "BSD-3-Clause"
 
-  bottle do
-    rebuild 1
-    sha256 big_sur:     "981dab2b0af4a0ed5a36bb9ed31f109852cfefed5db8a10aa4624113536d0bbf"
-    sha256 catalina:    "44d6c83a39c231cae86af05b3689cb2ec03be389562c1cc5e84a9f68ed09af80"
-    sha256 mojave:      "dc3b90a9ba13c31928c92227957d530656bab53d5ca3a35bfab02038118a964e"
-    sha256 high_sierra: "e42c02a42a4d2df97cba11e80729e8439e7476745548bd7ee23d72858c22a3f1"
-  end
-
   keg_only :versioned_formula
 
   depends_on arch: :x86_64
