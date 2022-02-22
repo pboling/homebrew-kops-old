@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-# Installs kops v1.16.15
+# Installs kops v1.16.4
 class KopsAT116 < Formula
   desc 'Production Grade K8s Installation, Upgrades, and Management'
   homepage 'https://github.com/kubernetes/kops'
-  url 'https://github.com/kubernetes/kops/archive/1.16.15.tar.gz'
-  sha256 '0644c8003681841e031f3e441f1f6723986f0980af5f72652eaf60ee74281bfb'
+  url 'https://github.com/kubernetes/kops/archive/1.16.4.tar.gz'
+  sha256 '20261b1afd80547a91d10167d1625bdd5a706533678627b064c68a16a0da7296'
   license 'Apache-2.0'
   head 'https://github.com/kubernetes/kops.git', branch: 'master'
 
@@ -28,11 +28,11 @@ class KopsAT116 < Formula
     bin.install('bin/kops')
 
     # Install bash completion
-    output = Utils.safe_popen_read("#{bin}/kops completion bash")
+    output = Utils.safe_popen_read("#{bin}/kops", 'completion', 'bash')
     (bash_completion / 'kops').write output
 
     # Install zsh completion
-    output = Utils.popen_read("#{bin}/kops completion zsh")
+    output = Utils.safe_popen_read("#{bin}/kops", 'completion', 'zsh')
     (zsh_completion / '_kops').write output
   end
 
