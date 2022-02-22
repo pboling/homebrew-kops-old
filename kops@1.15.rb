@@ -16,7 +16,7 @@ class KopsAT115 < Formula
 
   keg_only :versioned_formula
 
-  depends_on "go@1.12" => :build
+  depends_on "gokops@1.12" => :build
   depends_on "kubernetes-cli"
 
   def install
