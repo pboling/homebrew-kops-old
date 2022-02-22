@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-# Installs kops v1.20.2
+# Installs kops v1.20.3
 class KopsAT120 < Formula
   desc 'Production Grade K8s Installation, Upgrades, and Management'
   homepage 'https://kops.sigs.k8s.io/'
-  url 'https://github.com/kubernetes/kops/archive/v1.20.2.tar.gz'
-  sha256 '1d3548e003cafe664b6721bf3b06a6139d4e283b3726281cae15d072311d4b5e'
+  url 'https://github.com/kubernetes/kops/archive/v1.20.3.tar.gz'
+  sha256 '49517f88babeb0342464cf52a4bbed0a2281482e282c838992f368aa0862b599'
   license 'Apache-2.0'
   head 'https://github.com/kubernetes/kops.git', branch: 'master'
 
