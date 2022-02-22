@@ -1,4 +1,4 @@
-class Kops < Formula
+class KopsAT117 < Formula
   desc "Production Grade K8s Installation, Upgrades, and Management"
   homepage "https://github.com/kubernetes/kops"
   url "https://github.com/kubernetes/kops/archive/1.17.1.tar.gz"

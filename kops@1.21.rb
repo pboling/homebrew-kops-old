@@ -1,4 +1,4 @@
-class Kops < Formula
+class KopsAT121 < Formula
   desc "Production Grade K8s Installation, Upgrades, and Management"
   homepage "https://kops.sigs.k8s.io/"
   url "https://github.com/kubernetes/kops/archive/v1.21.2.tar.gz"
