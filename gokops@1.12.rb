@@ -16,8 +16,6 @@ class GokopsAT112 < Formula
 
   keg_only :versioned_formula
 
-  disable! date: "2021-02-16", because: :unsupported
-
   depends_on arch: :x86_64
 
   resource "gotools" do
